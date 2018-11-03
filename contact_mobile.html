@@ -10,64 +10,70 @@ Homework1
   <title>Contact Info</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/style2.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <style>
+    li {
+      font: 16pt sans-serif;
+      line-height: 200%;
+    }
+  </style>
 </head>
 
 <body>
-  <nav id="navBar" class="navbar navbar-expand-lg navbar-dark bg-dark" style="justify-content: flex-end;">
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="contact.html">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-      </li>
-    </ul>
-  </nav>
+  <div id="header">
+    <div id="headerContent">
+      <h1 id="name">Garret Rueckert</h1>
+      <nav class="nav">
+        <a href="index._mobile.html">About</a>
+        <a href="portfolio_mobile.html">Portfolio</a>
+        <a href="contact_mobile.html">Contact Me</a>
+      </nav>
+    </div>
+  </div>
 
 
   <div class="container">
-    <div class="row">
-      <h2>Contact Me</h2>
-    </div>
+    <section>
+      <h2>Contact</h2>
+    </section>
 
-    <form>
-      <div class="form-row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="First name">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Last name">
-        </div>
-      </div>
+    <form id="mailForm" action="mailto:garret.rueckert.guitar@gmail.com" method="post">
+      <fieldset class="form-group">
 
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
+        <label id="name">
+       Name
+       <input type="text" name="name" placeholder="Full name"
+      required>
+       </label>
 
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+        <label id="email">
+       Email
+       <input id="emailText" type="email" name="email" placeholder="Email address"
+      required>
+       </label>
 
-      <button type="button" class="btn btn-primary btn-lg">Send!</button>
+        <label id="message">
+       Message
+       <textarea name="comments"></textarea>
+       </label>
 
+      </fieldset>
+
+      <input class="btn btn-default" type="submit" name="submit" value="Send">
     </form>
+
+    
 
   </div>
   </section>
 
-  <footer class="footer" id="footer">
-    <div class="container" id="footer-container">
-      <span class="text-muted" style="color:antiquewhite;">Page by Garret Rueckert</span>
-    </div>
-  </footer>
+  <div id="footer">
+    Page by Garret Rueckert
+
+    <a href="index.html">Home</a>
+
+  </div>
 
 </body>
 
