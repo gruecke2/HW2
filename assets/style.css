@@ -1,0 +1,66 @@
+:root {
+  --darkish: #253939;
+  --bluish: #558188;
+  --greenish: #5FA292;
+  --orangey: #FF9C5F;
+  --redish: #FF8B6C;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: white;
+  background-image: url("folk-pattern-black.png");
+  /* background: #efeee7; */
+}
+
+a{
+  color: var(--orangey);
+}
+
+
+#navBar {
+  background: var(--darkish)!important;
+  background-image: url("grey_wash_wall.png")!important;
+  border-style: solid;
+  border-color: var(--redish);
+  border-left: hidden;
+  border-right: hidden;
+  border-top: hidden;
+  border-width: 3px;
+
+}
+
+.card-body {
+  color: black;
+}
+
+.container {
+  margin-top: 2em;
+}
+
+.text-muted{
+  color: antiquewhite !important;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-image: url("grey_wash_wall.png");
+  width: 100%;
+  text-align: center;
+  border-style: solid;
+  border-color: var(--redish);
+  border-left: hidden;
+  border-right: hidden;
+  border-bottom: hidden;
+  border-width: 3px;
+}
+
+#footer-container{
+  margin-top: .6em;
+}
