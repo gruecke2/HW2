@@ -34,8 +34,19 @@ a{
 
 }
 
+.card{
+  height: 18rem;
+  margin: auto;
+  margin-bottom: 1em;
+
+}
+
 .card-body {
   color: black;
+}
+
+.card-img-top{
+  height: 148.98px;
 }
 
 .container {
