@@ -57,7 +57,7 @@ a{
 }
 
 #footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
   background-image: url("grey_wash_wall.png");
